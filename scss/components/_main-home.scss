@@ -1,0 +1,255 @@
+
+//-----------Main Home----------------------//
+
+
+.section{
+	padding: 94px 0;
+	&:nth-child(4){
+		background-color: $section-bg-color-tow;
+	}
+	&:nth-child(3){
+		padding-top: 0;
+	}
+}
+
+
+/* section 1 */
+
+.section-one {
+	max-width: 1600px;
+	margin: 0 auto;
+	background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:200px 0px;
+  	background-color: $section-bg-color;
+	&__container{
+	max-width: 696px;
+	margin: 0 auto;
+	}
+	&__title {
+  text-transform: uppercase;
+  color: $seconadary-text-color;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+}
+
+
+/* section 2 */
+
+.title-hide { // visuallyhidden
+	position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-tow{
+			&__list {
+  		display: flex;
+	}
+			&__item{
+	width: 270px;
+	height: 120px;
+	margin-bottom:30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	background-color: $icon-background-color;
+
+	}
+	&__icon{
+	width: 70px;
+	height: 70px;
+}
+}
+
+.section-tow__column {
+  flex: 0 1 calc((100% - 90px)/4);
+  &:not(:last-child){
+		margin-right: 30px;
+	}
+}
+
+
+.section-text {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $artical-color-text;
+}
+
+.section-subtitle {
+  color: $sub-title-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* section 3 */
+.section-three{
+	&__list {
+  display: flex;
+	}
+}
+
+.section-three__column {
+	position: relative;
+  flex: 0 1 calc((100% - 60px)/3);
+  	&:not(:last-child){
+		margin-right: 30px;
+	}
+}
+
+.section-three__label{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 70px;
+	background-color: hsla(235, 10%, 21%, 0.8);
+	font-weight: 700;
+	color: $seconadary-text-color;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	
+
+
+}
+
+.section-title {
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* section 4 */
+.section-foure{
+	&__list {
+  display: flex; 
+}
+}
+
+.section-foure__column {
+	background-color: $primary-background;
+  flex: 0 1 calc((100% - 90px)/4);
+  &:not(:last-child){
+		margin-right: 30px;
+	}
+}
+
+.card{
+	box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+  border-radius: 0px 0px 4px 4px;
+  	&__item {
+  padding: 30px 0;
+	}
+	&__title {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 0 10px 0;
+	}
+	&__text {
+  color: $artical-color-text;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+	}
+}
+
+.card-social__list {
+	display: flex;
+	justify-content: center;
+}
+.card-social__item {
+	&:not(:last-child){
+		margin-right: 10px;
+	}
+}
+.card-social__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	color: $social-link-hover;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	outline: transparent;
+	&:hover,
+	&:focus {
+			background-color:$hover-color;
+			color:$seconadary-text-color;
+	}
+}
+
+
+.card-social__icon {
+	fill: currentColor;
+}
+
+
+/* section 5 */
+.section-company{
+	&__list {
+	display: flex;
+	}
+}
+
+.section-company__item{
+	
+	&:not(:last-child){
+		margin-right: 30px;
+	}
+	
+}
+
+.section-company__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 170px;
+	height: 92px;
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
+	color: $social-link-hover;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	outline: transparent;
+	&:hover,
+	&:focus{
+	border: 1px solid $hover-color;
+	color: $hover-color;
+	}
+}
+.section-company__icon {
+	fill: currentColor;
+}

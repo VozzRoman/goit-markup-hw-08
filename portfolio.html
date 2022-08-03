@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Портфолио</title>
+  </head>
+
+  <body>
+    <!-- Шапка страницы -->
+ <header class="header">
+      <div class="header-page container">
+        <a href="./index.html" class="logo" lang="en"><span class="logo__color">Web</span>Studio</a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-link header-link--active" href="">Портфолио</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact header-contact__list">
+          <li class="header-contact__item">
+            <a class="header-link header-link--color" href="mailto:info@devstudio.com">
+					<svg class="header-link__icon" width="16" height="12" ><use href="./images/sprite.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+          </li>
+          <li class="header-contact__item">
+            <a class="header-link header-link--color" href="tel:+380961111111">
+					<svg class="header-link__icon" width="10" height="16"><use href="./images/sprite.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Уникальный контент страницы -->
+    <main>
+      <!-- Секция 1 -->
+      <section class="section section__portfolio">
+        <div class="section__portfolio-container container">
+          <h1 class="section-title title-hide">Портфолио</h1>
+          <ul class="section__portfolio-list">
+            <li class="section__portfolio-item">
+              <button class="button button--active" type="button">Все</button>
+            </li>
+            <li class="section__portfolio-item">
+              <button class="button" type="button">Веб-сайты</button>
+            </li>
+            <li class="section__portfolio-item">
+              <button class="button" type="button">Приложения</button>
+            </li>
+            <li class="section__portfolio-item">
+              <button class="button" type="button">Дизайн</button>
+            </li>
+            <li class="section__portfolio-item">
+              <button class="button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="portfolio-cards portfolio-cards__list">
+            <li class="portfolio-cards__column">
+              <a class="portfolio-cards__link" href="">
+					<div class="portfolio-cards__img">
+						 <img src="./images/img_1.jpeg" alt="ноутбук" width="370"/>
+						 <div class="portfolio-cards__hover"><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p></div>
+					</div>
+                <div class="portfolio-cards__content">
+                  <h2 class="portfolio-cards__subtitle">Технокряк</h2>
+                  <p class="portfolio-cards__info">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-cards__column">
+              <a class="portfolio-cards__link" href="">
+                	<div class="portfolio-cards__img">
+						 <img src="./images/img_2.jpeg" alt="ноутбук" width="370"/>
+						 <div class="portfolio-cards__hover"><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p></div>
+						</div>
+                <div class="portfolio-cards__content">
+                  <h2 class="portfolio-cards__subtitle" lang="en">Постер <span>New Orlean vs Golden Star</span></h2>
+                  <p class="portfolio-cards__info">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-cards__column">
+              <a class="portfolio-cards__link" href="">
+                		<div class="portfolio-cards__img">
+						 <img src="./images/img_3.jpeg" alt="ноутбук" width="370"/>
+						 <div class="portfolio-cards__hover"><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p></div>
+					</div>
+                <div class="portfolio-cards__content">
+                  <h2 class="portfolio-cards__subtitle" lang="en">Ресторан <span>Seafood</span></h2>
+                  <p class="portfolio-cards__info">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-cards__column">
+              <a class="portfolio-cards__link" href="">
+						<div class="portfolio-cards__img">
+						 <img src="./images/img_4.jpeg" alt="ноутбук" width="370"/>
+						 <div class="portfolio-cards__hover"><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p></div>
+					</div>
+                <div class="portfolio-cards__content">
+                  <h2 class="portfolio-cards__subtitle" lang="en">Проект <span>Prime</span></h2>
+                  <p class="portfolio-cards__info">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-cards__column">
+              <a class="portfolio-cards__link" href="">
+                	<div class="portfolio-cards__img">
+						 <img src="./images/img_5.jpeg" alt="ноутбук" width="370"/>
+						 <div class="portfolio-cards__hover"><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p></div>
+					</div>
+                <div class="portfolio-cards__content">
+                  <h2 class="portfolio-cards__subtitle" lang="en">Проект <span>Boxes</span></h2>
+                  <p class="portfolio-cards__info">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-cards__column">
+              <a class="portfolio-cards__link" href="">
+                	<div class="portfolio-cards__img">
+						 <img src="./images/img_6.jpeg" alt="ноутбук" width="370"/>
+						 <div class="portfolio-cards__hover"><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p></div>
+					</div>
+                <div class="portfolio-cards__content">
+                  <h2 class="portfolio-cards__subtitle" lang="en">Inspiration has no Borders</h2>
+                  <p class="portfolio-cards__info">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-cards__column">
+              <a class="portfolio-cards__link" href="">
+                	<div class="portfolio-cards__img">
+						 <img src="./images/img_7.jpeg" alt="ноутбук" width="370"/>
+						 <div class="portfolio-cards__hover"><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p></div>
+					</div>
+                <div class="portfolio-cards__content">
+                  <h2 class="portfolio-cards__subtitle" lang="en">Издание <span>Limited Edition</span></h2>
+                  <p class="portfolio-cards__info">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-cards__column">
+              <a class="portfolio-cards__link" href="">
+                	<div class="portfolio-cards__img">
+						 <img src="./images/img_8.jpeg" alt="ноутбук" width="370"/>
+						 <div class="portfolio-cards__hover"><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p></div>
+					</div>
+                <div class="portfolio-cards__content">
+                  <h2 class="portfolio-cards__subtitle" lang="en">Проект <span>LAB</span></h2>
+                  <p class="portfolio-cards__info">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-cards__column">
+              <a class="portfolio-cards__link" href="">
+                	<div class="portfolio-cards__img">
+						 <img src="./images/img_9.jpeg" alt="ноутбук" width="370"/>
+						 <div class="portfolio-cards__hover"><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p></div>
+					</div>
+                <div class="portfolio-cards__content">
+                  <h2 class="portfolio-cards__subtitle" lang="en">Growing Business</h2>
+                  <p class="portfolio-cards__info">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал страницы -->
+     <footer class="footer page__footer">
+      <div class="footer__container container">
+			<div class="footer__column-adress">
+				    <a class="logo footer-logo--color" href="./index.html" lang="en"><span class="logo__color">Web</span>Studio</a>
+        <address>
+          <ul class="footer-adress footer-adress__list">
+            <li class="footer-adress__item">
+              <p class="footer-adress__text">г. Киев, пр-т Леси Украинки, 26</p>
+            </li>
+            <li class="footer-adress__item">
+              <a class="footer-adress__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-adress__item">
+              <a class="footer-adress__link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+			</div>
+			<div class="footer__column-social">
+				<strong class="section-subtitle footer__section-subtitle--color">присоединяйтесь</strong>
+				<ul class="footer-social footer-social__list">
+						<li class="card-social__item">
+							<a href="https://www.instagram.com/" target="_blank" class="card-social__link card-social__link--color">
+								<svg class="card-social__icon card-social__icon--color" width="20" height="20"><use href="./images/sprite.svg#icon-instagram"></use></svg>
+							</a>
+						</li>
+						<li class="card-social__item">
+							<a href="https://twitter.com/?lang=ru" target="_blank" class="card-social__link card-social__link--color">
+								<svg class="card-social__icon card-social__icon--color" width="20" height="20"><use href="./images/sprite.svg#icon-twitter"></use></svg>
+							</a>
+						</li>
+							<li class="card-social__item">
+							<a href="https://www.facebook.com/" target="_blank" class="card-social__link card-social__link--color">
+								<svg class="card-social__icon card-social__icon--color" width="20" height="20"><use href="./images/sprite.svg#icon-facebook"></use></svg>
+							</a>
+						</li>
+						<li class="card-social__item">
+							<a href="https://www.linkedin.com/company/social-in" target="_blank" class="card-social__link card-social__link--color">
+								<svg class="card-social__icon card-social__icon--color" width="20" height="20"><use href="./images/sprite.svg#icon-in"></use></svg>
+							</a>
+						</li>
+				</ul>
+			</div>
+			<div class="footer__column-form">
+				<strong class="section-subtitle footer__section-subtitle--color">Подпишитесь на рассылку</strong>
+				<form class="footer__form" autocomplete="off">
+					<label class="footer__field">
+						<input type="email" name="email" class="footer__input" placeholder="E-mail">
+					</label>
+				<button type="submit" class="button button--footer">Подписаться<svg class="footer__button-icon" width="24" height="24"><use href="./images/sprite.svg#icon-send"></use></svg></button>
+				</form>
+			</div>
+    
+      </div>
+    </footer>
+  </body>
+</html>
