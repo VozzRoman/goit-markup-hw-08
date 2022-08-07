@@ -474,6 +474,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .header-nav {
+    margin-bottom: 200px;
     height: 100%;
   }
   .header-nav__item:not(:last-child) {
