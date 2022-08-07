@@ -3,12 +3,13 @@
 //----------------------------Header------------------------//
 
 .header {
+	position: relative;
 	border: 1px solid #ECECEC;
 
 
 }
 .header-page {
-	position: relative;
+	
   	display: flex;
 	align-items: center;
 	background-color: $primary-background;
@@ -21,24 +22,24 @@
 }
 .header-page__menu{
 	@media screen and (max-width:767px){
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 0;
 		background-color: $primary-background;
 		flex-direction: column;
 		align-items: flex-start;
 		width: 100%;
-		height: calc(100vh - 50px);
-		padding: 30px 20px;
+		height: 100vh;
+		padding: 30px 20px 98px 30px;
 		z-index: 55;
-		transform: translateY(-150%);
+		transform: translateY(-100%);
 		transition: transform 250ms linear;
 		&.active {
 			transform: translateY(0);
 		}
 	}
 	@media screen and (min-width:480px) and (max-width:767px){
-		padding: 48px 40px;
+		padding: 48px 40px 98px 40px;
 	}
 		display: flex;
 		align-items: center;
@@ -171,7 +172,7 @@
 	&::after{
 	content: '';
 	position: absolute;
-	bottom: -1px;
+	bottom: -2px;
 	left: 0;
 	width: 100%;
 	height: 4px;
@@ -179,11 +180,19 @@
 	border-radius: 2px;
 		}
 	}
+	@media screen and (min-width: 1200px){
+		&::after{
+	content: '';
+			bottom: -1px;
+		}
+		
+	}
 
 }
 
 .header-link--color {
 	color: $artical-color-text;
+	
 	padding: 0;
 	
 }

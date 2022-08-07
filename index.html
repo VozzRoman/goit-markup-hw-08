@@ -24,8 +24,11 @@
     <header class="header">
       <div class="header-page container">
         <a href="./index.html" class="logo" lang="en"><span class="logo__color">Web</span>Studio</a>
-		  <div class="header-page__menu">
-			<svg class="button-close__header-page" width="19" height="19"><use href="./images/sprite.svg#icon-close-black"></use></svg>
+		  
+		  <div class="header-page__menu" id="header-page__menu">
+			<button class="button-close-menu">
+				<svg class="button-close__header-page" width="19" height="19"><use href="./images/sprite.svg#icon-close-black"></use></svg>
+			</button>
 			<nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
@@ -65,8 +68,8 @@
 				</li>
 			</ul>
 		  </div>
-		  	<button class="button-menu">
-				<svg class="button-menu__icon" width="40" height="40"><use href="./images/sprite.svg#icon-burger"></use></svg>
+		  	<button class="button-menu" aria-expanded="false" aria-controls="header-page__menu">
+				<svg class="button-menu__icon" width="40" height="40" aria-label="переключатель мобильного меню"><use href="./images/sprite.svg#icon-burger"></use></svg>
 			</button>
       </div>
     </header>
