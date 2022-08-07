@@ -17,7 +17,7 @@
 	transform: translate(-50%, -50%) scale(1);
 	opacity: 1;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	min-width: 528px;
+	min-width: 320px;
 	min-height: 581px;
 	background-color: $primary-background;
 	border-radius: 4px;
@@ -36,6 +36,14 @@
 	display: block;
 	
 	}
+	@media screen and (min-width:480px) {
+	 min-width: 450px;
+	}
+	@media screen and (min-width:1200px) {
+	 min-width: 528px;
+	}
+	
+
 
 }
 .overlay{
@@ -142,6 +150,8 @@
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 30px;
+
+
 }
 .modal__chackbox-icon{
 	cursor: pointer;
@@ -168,7 +178,6 @@
 		border: 2px solid $hover-color;
 	}
 	
-	
 }
 .modal__chackbox-icon{
 	&:hover {
@@ -177,9 +186,17 @@
 }
 
 .modal__chackbox-text {
+	font-size: 10px;
 	color: $artical-color-text;
 	line-height: 1.7;
 	letter-spacing: 0.03em;
+		@media screen and (min-width:480px) {
+	font-size: 12px;
+	}
+
+		@media screen and (min-width:1200px) {
+		font-size: inherit;
+	}
 }
 .modal__form-link {
 	color: $hover-color;

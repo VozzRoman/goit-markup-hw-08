@@ -3,63 +3,139 @@
 
 /* footer */
 .footer {
-  background-color: $section-bg-color;
-  padding: 60px 0;
-  	&__container{
+	padding: 60px 0;
+	background-color: $section-bg-color;
+	text-align: center;
+	
+   @media screen and (min-width:767px) and (max-width: 1199px){
+		&__container{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-around;
+	}
+		&__column-form{
+			flex: 0 1 100%;
+			margin-top: 60px;
+		}
+  	}
+   @media screen and (min-width:1200px) {
+		text-align: left;
+  		&__container{
 		display: flex;
 		align-items: baseline;
 	}
-	&__column-adress{
+
+		&__column-adress{
 	flex: 0 0 230px;
 	margin-right: 70px;
 	}
-	&__column-social{
+		&__column-social{
 	flex: 0 0 206px;
 	margin-right: 93px;
 	}
-	&__column-form{
+		&__column-form{
 	flex: 0 1 100%;
 }
+	}
+
 }
+
 .footer-logo--color {
+	color: $seconadary-text-color;
+	padding: 0;
+	margin-bottom: 20px;
+	
+   @media screen and (min-width:768px) {
+		margin-right: 0;
+  	}
+   @media screen and (min-width:1200px) {
 	display: block;
-  color: $seconadary-text-color;
-  margin: 0 0 20px 0;
-  padding: 0;
+  	margin: 0 0 20px 0;
+	}
+
 }
+
 .footer-adress__list {
-  font-style: normal;
-  color: $seconadary-text-color;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-.footer-adress__text{
+	font-style: normal;
+  	color: $seconadary-text-color;
+  	line-height: 1.7;
+  	letter-spacing: 0.03em;
+	@media screen and (max-width:767px){
+		margin-bottom: 60px;
+	}
 
 }
+
+
+
 .footer-adress__item {
-  &:not(:last-child){
-	margin-bottom: 9px;
+			 &:not(:last-child){
+		margin-bottom: 8px;
   }
+	@media screen and (min-width:480px) {
+	
+ 	}
+   @media screen and (min-width:768px) {
+
+  	}
+   @media screen and (min-width:1200px) {
+		 &:not(:last-child){
+		margin-bottom: 9px;
+  }
+	}
+ 
 }
 
 .footer-adress__link {
-  color: $footer-link-color;
-  text-decoration: none;
+	color: $footer-link-color;
+  	text-decoration: none;
+
 }
+
 .footer-adress__link {
-  &:hover,
-  &:focus{
-	color: $hover-color;
+
+	@media screen and (min-width:480px) {
+	
+ 	}
+   @media screen and (min-width:768px) {
+
+  	}
+   @media screen and (min-width:1200px) {
+		  	&:hover,
+  			&:focus{
+			color: $hover-color;
   }
+	}
+
 }
 
 .footer-social__list{
 	display: flex;
+	justify-content: center;
+	@media screen and (max-width:767px) {
+		margin-bottom: 60px;
+	}
+	@media screen and (min-width:480px) {
+	
+ 	}
+   @media screen and (min-width:768px) {
+
+  	}
+   @media screen and (min-width:1200px) {
+		
+	}
+	
 }
 .footer__section-subtitle--color{
-	display: flex;
-	color: $seconadary-text-color;
-	margin-bottom: 20px;
+		display: block;
+		color: $seconadary-text-color;
+		margin-bottom: 20px;
+   @media screen and (min-width:768px) and (max-width:1199px) {
+		text-align: center;
+  	}
+ 
+
 }
 .card-social__link--color{
 	background-color:rgba(255, 255, 255, 0.1);
@@ -71,21 +147,41 @@
 
 
 .footer__form {
+
+	@media screen and (min-width:480px) {
+	
+ 	}
+   @media screen and (min-width:1200px) {
 	display: flex;
 	flex: 1 1 auto;
+	}
+
 	
 
 }
+
 .footer__field {
-	flex: 1 1 auto;
-	margin-right: 12px;
+
+	@media screen and (min-width:480px) {
+	
+ 	}
+   @media screen and (min-width:768px) {
+
+  	}
+   @media screen and (min-width:1200px) {
+		flex: 1 1 auto;
+		margin-right: 12px;
+	}
+	
 
 }
+
 .footer__input {
 	width: 100%;
 	display: inline-flex;
 	align-items: center;
 	padding: 15px 16px;
+	height: 50px;
 	background-color: transparent;
 	border: 1px solid hsla(0, 0%, 100%, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -96,19 +192,27 @@
 	line-height: 1.25;
 	outline: transparent;
 	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__input{
-	&:focus{
+			&:focus{
 		border: 1px solid hsla(0, 0%, 100%, 0.7);
 	}
+	
+   @media screen and (max-width:1199px) {
+		margin-bottom: 20px;
+  	}
+ 
+
 }
 
+
+
 .button--footer{
-	background-color: $hover-color;
-	color: $seconadary-text-color;
+		background-color: $hover-color;
+		color: $seconadary-text-color;
+		height: 50px;
+		padding: 10px 29px 10px 28px;
+			
 }
 .footer__button-icon{
-	margin-left: 10px;
+	margin-left: 10px;	
 }
 
