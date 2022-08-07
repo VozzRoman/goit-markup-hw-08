@@ -21,7 +21,7 @@
 }
 .header-page__menu{
 	@media screen and (max-width:767px){
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		background-color: $primary-background;
