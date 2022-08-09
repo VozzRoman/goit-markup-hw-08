@@ -369,9 +369,6 @@ body.lock {
   border: transparent;
   background-color: transparent;
 }
-.button-burger:hover, .button-burger:focus {
-  border: 1px solid #2196f3;
-}
 .button-burger:hover .button-burger__icon, .button-burger:focus .button-burger__icon {
   fill: #2196f3;
 }
@@ -390,9 +387,6 @@ body.lock {
   right: 15px;
   border: transparent;
   background-color: transparent;
-}
-.button-close-menu:focus, .button-close-menu:hover {
-  border: 1px solid #2196f3;
 }
 .button-close-menu:focus .button-close-menu__icon, .button-close-menu:hover .button-close-menu__icon {
   fill: #2196f3;

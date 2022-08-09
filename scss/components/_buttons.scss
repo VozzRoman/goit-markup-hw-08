@@ -106,7 +106,6 @@
 	background-color: transparent;
 	&:hover,
 	&:focus{
-		border: 1px solid $hover-color;
 		.button-burger__icon{
 		fill: $hover-color;
 		}
@@ -128,7 +127,6 @@
 	background-color: transparent;
 	&:focus,
 	&:hover{
-		border: 1px solid $hover-color;
 		.button-close-menu__icon{
 			fill: $hover-color;
 		}
