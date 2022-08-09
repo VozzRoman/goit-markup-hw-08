@@ -26,6 +26,9 @@ body {
   color: #212121;
   background-color: #ffffff;
 }
+body.lock {
+  overflow: hidden;
+}
 
 .container {
   padding-left: 15px;
@@ -400,8 +403,10 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   border: 1px solid #ECECEC;
+  background-color: #ffffff;
 }
 
 .header-page {

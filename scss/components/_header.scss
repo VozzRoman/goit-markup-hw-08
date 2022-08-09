@@ -3,13 +3,14 @@
 //----------------------------Header------------------------//
 
 .header {
-	position: relative;
+	position: fixed;
+	width: 100%;
 	border: 1px solid #ECECEC;
+	background-color: $primary-background;
 
 
 }
 .header-page {
-	
   	display: flex;
 	align-items: center;
 	background-color: $primary-background;
