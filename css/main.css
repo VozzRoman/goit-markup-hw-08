@@ -409,6 +409,8 @@ body.lock {
 @media screen and (max-width: 767px) {
   .header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
   }
 }
@@ -691,6 +693,11 @@ body.lock {
   padding: 118px 0px;
   background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-bg1x.jpg");
+}
+@media screen and (max-width: 767px) {
+  .section-one {
+    margin-top: 60.55px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-one {

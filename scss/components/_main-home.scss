@@ -25,6 +25,9 @@
 /* section 1 */
 
 .section-one {
+	@media screen and (max-width:767px){
+	margin-top: 60.55px;
+	}
 	margin: 0 auto;
 	background-repeat: no-repeat;
 	background-size: cover;
