@@ -46,7 +46,7 @@
 		}
 	}
 	@media screen and (min-width:480px) and (max-width:767px){
-		padding: 48px 40px 98px 40px;
+		padding: 48px 40px 98px 40px;//--падинг внизу не по макету, что бы меню не прятолось под навигацию браузера
 	}
 		display: flex;
 		align-items: center;
