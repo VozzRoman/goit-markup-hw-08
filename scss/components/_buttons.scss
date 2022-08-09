@@ -104,11 +104,20 @@
 		display: block;
 	width: 40px;
 	height: 40px;
-	border: none;
+	border: transparent;
 	background-color: transparent;
+	&:hover,
+	&:focus{
+		border: 1px solid $hover-color;
+		.button-menu__icon{
+		fill: $hover-color;
+}
+
+	}
 	}
 
 }
+
 
 
 .button-close__header-page {			
@@ -129,6 +138,7 @@
 	top: 10px;
 	right: 15px;
 	border: none;
+
 
 	background-color: transparent;
 	@media screen and (min-width: 768px) {
