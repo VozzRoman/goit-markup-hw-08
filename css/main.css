@@ -676,11 +676,21 @@ body {
 /* section 1 */
 .section-one {
   margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 118px 0px;
   background-color: #2f303a;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile-bg1x.jpg");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-one {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile-bg2x.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .section-one {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile-bg3x.jpg");
+  }
 }
 .section-one__title {
   text-transform: uppercase;
@@ -716,6 +726,36 @@ body {
     letter-spacing: 0.06em;
     text-align: center;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 481px) {
+  .section-one {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet-bg1x.jpg");
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .section-one {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet-bg2x.jpg");
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (min-resolution: 288dpi), screen and (min-width: 481px) and (min-device-pixel-ratio: 2) and (min-resolution: 3dppx), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-resolution: 192dpi) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-resolution: 192dpi) and (min-resolution: 288dpi), screen and (min-width: 481px) and (min-resolution: 192dpi) and (min-resolution: 3dppx), screen and (min-width: 481px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 3), screen and (min-width: 481px) and (min-resolution: 2dppx) and (min-resolution: 288dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) and (min-resolution: 3dppx) {
+  .section-one {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet-bg3x.jpg");
+  }
+}
+@media screen and (min-width: 769px) {
+  .section-one {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/pc-bg1x.jpg");
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .section-one {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/pc-bg2x.jpg");
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (min-resolution: 288dpi), screen and (min-width: 769px) and (min-device-pixel-ratio: 2) and (min-resolution: 3dppx), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-resolution: 192dpi) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-resolution: 192dpi) and (min-resolution: 288dpi), screen and (min-width: 769px) and (min-resolution: 192dpi) and (min-resolution: 3dppx), screen and (min-width: 769px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-resolution: 2dppx) and (min-resolution: 288dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) and (min-resolution: 3dppx) {
+  .section-one {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/pc-bg3x.jpg");
   }
 }
 
@@ -888,9 +928,6 @@ body {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
   border-radius: 0px 0px 4px 4px;
-}
-.card img {
-  width: 100%;
 }
 .card__item {
   padding: 30px 0 24px 0;
