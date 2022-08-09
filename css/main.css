@@ -403,10 +403,14 @@ body.lock {
 }
 
 .header {
-  position: fixed;
-  width: 100%;
   border: 1px solid #ECECEC;
   background-color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    width: 100%;
+  }
 }
 
 .header-page {
