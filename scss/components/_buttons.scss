@@ -98,49 +98,46 @@
 }
 }
 
-.button-menu {
-	display: none;
-	@media screen and (max-width:767px){
-		display: block;
-	width: 40px;
-	height: 40px;
+.button-burger {
+	display: flex;
+	align-items: center;
+	padding: 0;
 	border: transparent;
 	background-color: transparent;
 	&:hover,
 	&:focus{
 		border: 1px solid $hover-color;
-		.button-menu__icon{
+		.button-burger__icon{
 		fill: $hover-color;
-}
-
-	}
-	}
-
-}
-
-
-
-.button-close__header-page {			
-	width: 40px;
-	height: 40px;
-	&:hover,
-	&:focus {
-		fill: $hover-color;
-	}
-	@media screen and (min-width: 767px) {
-		display: none;
 		}
+	}
+	@media screen and (min-width:767px){
+		display: none;
+	}
+
 }
+
+
+
+
 
 .button-close-menu{
 	display: flex;
+	align-items: center;
 	position: absolute;
+	padding: 0;
 	top: 10px;
 	right: 15px;
-	border: none;
-
-
+	border: transparent;
 	background-color: transparent;
+	&:focus,
+	&:hover{
+		border: 1px solid $hover-color;
+		.button-close-menu__icon{
+			fill: $hover-color;
+		}
+
+	}
 	@media screen and (min-width: 768px) {
 		display: none;
 	}

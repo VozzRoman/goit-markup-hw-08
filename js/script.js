@@ -1,4 +1,4 @@
-const buttonBuger = document.querySelector(".button-menu");
+const buttonBuger = document.querySelector(".button-burger");
 const buttonMenuClose = document.querySelector(".button-close-menu");
 const burgerMenu = document.querySelector(".header-page__menu");
 const bodyLock = document.body;
