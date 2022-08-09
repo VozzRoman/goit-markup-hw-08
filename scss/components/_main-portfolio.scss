@@ -1,13 +1,18 @@
 /* portfolio page */
 
 /* section portfolio */
+
 .section {
 			&__portfolio-list {
 			display: flex;
 			flex-wrap: wrap;
 			margin-bottom: 40px;
 			}
-	
+			&__portfolio {
+				@media screen and (max-width:767px){
+					margin-top: 60.55px;
+				}
+			}
 
 	@media screen and (min-width:768px){
 		&__portfolio-list{

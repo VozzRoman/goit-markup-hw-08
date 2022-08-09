@@ -1044,6 +1044,11 @@ body.lock {
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 767px) {
+  .section__portfolio {
+    margin-top: 60.55px;
+  }
+}
 @media screen and (min-width: 768px) {
   .section__portfolio-list {
     justify-content: center;
