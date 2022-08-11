@@ -5,6 +5,10 @@ body {
   font-size: $text-size;
   color: $primary-text-color;
   background-color: $primary-background;
+  @media screen and (max-width:767px) {
+	padding-top: 60.55px;
+  }
+  
   &.lock {
 	overflow: hidden;
   }

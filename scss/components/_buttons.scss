@@ -79,6 +79,7 @@
 	background-color: transparent;
 	border: 1px solid hsla(0, 0%, 0%, 0.1);
 	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	z-index: 20;
 	&:hover,
 	&:focus {
 		border: 1px solid $hover-color;
@@ -104,10 +105,12 @@
 	padding: 0;
 	border: transparent;
 	background-color: transparent;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover,
 	&:focus{
+		color: $hover-color;
 		.button-burger__icon{
-		fill: $hover-color;
+		fill: currentColor;
 		}
 	}
 	@media screen and (min-width:767px){
@@ -125,10 +128,12 @@
 	right: 15px;
 	border: transparent;
 	background-color: transparent;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:focus,
 	&:hover{
+		color: $hover-color;
 		.button-close-menu__icon{
-			fill: $hover-color;
+			fill: currentColor;
 		}
 
 	}
