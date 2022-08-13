@@ -12,7 +12,11 @@
 			margin-bottom: 60px;
 		}
 	}
-	
+	@media screen and (max-width:767px){
+		&__column-adress{
+		margin-bottom: 60px;
+	}
+	}
    @media screen and (min-width:767px) and (max-width: 1199px){
 		&__container{
 		display: flex;
@@ -63,9 +67,6 @@
 }
 .footer-location {
 	font-style: normal;
-		@media screen and (max-width:767px){
-		margin-bottom: 60px;
-	}
 }
 .footer-adress__list {
   	color: $seconadary-text-color;
@@ -102,13 +103,6 @@
 }
 
 .footer-adress__link {
-
-	@media screen and (min-width:480px) {
-	
- 	}
-   @media screen and (min-width:768px) {
-
-  	}
    @media screen and (min-width:1200px) {
 		  	&:hover,
   			&:focus{
