@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Студия</title>
   </head>
@@ -434,17 +435,17 @@
 				<form autocomplete="off" class="modal__form" method="POST" action="javascript:void(0)">
 						<label class="modal__form-field">
 								<span class="modal__form-name">Имя</span>
-								<input class="modal__form-input" type="text" name="name">
+								<input class="modal__form-input" type="text" name="name" placeholder="имя" required>
 								<span class="modal__form-icon"><svg class="modal__form-svg" width="18" height="18"><use href="./images/sprite.svg#icon-name"></use></svg></span>
 						</label>
 						<label class="modal__form-field">
 							<span class="modal__form-name">Телефон</span>
-							<input class="modal__form-input" type="tel" name="phone">
+							<input id="phone" class="modal__form-input" type="tel" name="phone" placeholder="+38(000)000-00-00" required>
 							<span class="modal__form-icon"><svg class="modal__form-svg" width="18" height="18"><use href="./images/sprite.svg#icon-phone"></use></svg></span>
 						</label>
 						<label class="modal__form-field">
 							<span class="modal__form-name">Почта</span>
-								<input class="modal__form-input" type="email" name="email">
+								<input id="email" class="modal__form-input" type="email" name="email" placeholder="почта" required>
 								<span class="modal__form-icon"><svg class="modal__form-svg" width="18" height="18"><use href="./images/sprite.svg#icon-email"></use></svg></span>
 						</label>
 						<label class="modal__form-comments">
@@ -464,6 +465,8 @@
 	</div>
 	 <script src="./js/modal.js"></script>
 	 <script src="./js/mobile-menu.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script src="./js/phone-mask.js"></script>
 	 		<!-- backdrop -->
 
 

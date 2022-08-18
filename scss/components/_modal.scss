@@ -1,4 +1,15 @@
 /*                             backdrop                                 */
+@keyframes rotation {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+
 .overlay {
 	@media screen and (max-width:767px){
 	overflow-y: scroll;
@@ -39,7 +50,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%) scale(1) rotate(0deg);
 	opacity: 1;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	width: 450px;
@@ -61,8 +72,8 @@
 }
 }
 .overlay{
-	&.is-hidden + .modal{
-				transform: translate(-50%, -50%) scale(0.7);
+	&.is-hidden .modal{
+				transform: translate(-50%, -50%) scale(0) rotate(-360deg);
 				opacity: 0;
 		}
 		
@@ -117,10 +128,19 @@
 }
 
 .modal__form-input{
+	&::placeholder{
+		color: transparent;
+	}
 	&:focus + .modal__form-icon{
 		fill: $hover-color;
 	}
 	
+}
+.modal__form-input:not(:focus):not(:placeholder-shown):valid {
+background-color: hsla(207, 90%, 54%, 0.1);
+}
+.modal__form-input:not(:focus):not(:placeholder-shown):invalid {
+	border: 1px solid red;
 }
 .modal__form-comments {
 	display: block;
