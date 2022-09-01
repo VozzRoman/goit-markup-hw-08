@@ -9,8 +9,7 @@ buttonBuger.addEventListener('click', function () {
 	bodyLock.classList.add('lock');
 	buttonBuger.setAttribute("aria-expanded", !expanded);
 })
-buttonMenuClose.addEventListener('click', function (event) {
-	event.stopPropagation();
+buttonMenuClose.addEventListener('click', function () {
 	const expanded = buttonBuger.getAttribute("aria-expanded") === "false" || true;
 	burgerMenu.classList.remove('active');
 	bodyLock.classList.remove('lock');
